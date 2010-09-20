@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>StumpMe</title>
+    <style type="text/css">
+        img.progress {
+            float: left;
+        }
+        div.row{
+            overflow: hidden;
+        }
+        div.row div:first-child{
+            clear: left;
+        }
+        div.token {
+            background-image: url('images/enabled/blue.png');
+        }
+        div.row div{
+            float: left;
+            width: 51px;
+            height: 51px;
+            
+            border: 1px solid rgba(0,0,0,0.3);
+            
+            /* Rounded border */
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+           
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="board1"></div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+<script type="text/javascript" src="js/board.js"></script>
+<script type="text/javascript">
+    $("#board1").board();
+    
+</script>
+</body>
+</html>
